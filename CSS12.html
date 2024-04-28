@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .position {
+            width: 300px;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 2px solid #333;
+            background-color: #f2f2f2;
+        }
+
+        .position h2 {
+            margin-top: 0;
+        }
+
+        .position p {
+            margin-bottom: 0;
+        }
+
+        .static {
+            position: static;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .sticky {
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+    <div class="position static">
+        <h2>static</h2>
+        <p>En CSS, la posición `static` es la posición predeterminada de un elemento. El elemento se coloca en el flujo normal del documento.</p>
+    </div>
+<br>
+<br><br><br><br><br><br><br><br>
+    <div class="position relative">
+        <h2>relative</h2>
+        <p>En CSS, la posición `relative` posiciona un elemento en relación con su posición normal en el flujo del documento. Se puede desplazar utilizando las propiedades `top`, `right`, `bottom` y `left`.</p>
+    </div>
+<br>
+<br><br><br><br><br><br><br><br>
+    <div class="position fixed">
+        <h2>fixed</h2>
+        <p>En CSS, la posición `fixed` posiciona un elemento en relación con la ventana del navegador, por lo que permanece fijo incluso cuando se desplaza la página. Se puede utilizar para elementos como barras de navegación fijas.</p>
+    </div>
+<br>
+<br><br><br><br><br><br><br><br>
+    <div class="position absolute">
+        <h2>absolute</h2>
+        <p>En CSS, la posición `absolute` posiciona un elemento en relación con el primer ancestro posicionado, es decir, un elemento cuya posición no sea `static`. Si no hay ningún ancestro posicionado, se posicionará en relación con el elemento `html`. Se puede desplazar utilizando las propiedades `top`, `right`, `bottom` y `left`.</p>
+    </div>
+<br>
+<br><br><br><br><br><br><br>
+    <div class="position sticky">
+        <h2>sticky</h2>
+        <p>En CSS, la posición `sticky` posiciona un elemento en relación con el borde superior de la ventana de visualización hasta que alcanza un límite específico, momento en el que se comporta como `fixed`. Es útil para encabezados que se vuelven fijos al desplazarse hacia abajo en la página.</p>
+    </div>
+</body>
+</html>

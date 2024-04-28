@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .visible {
+            overflow: visible;
+            width: 300px;
+            height: 150px;
+            border: 2px solid #333;
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+            padding: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .hidden {
+            overflow: hidden;
+            width: 300px;
+            height: 150px;
+            border: 2px solid #333;
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+            padding: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .scroll {
+            overflow: scroll;
+            width: 300px;
+            height: 150px;
+            border: 2px solid #333;
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+            padding: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .auto {
+            overflow: auto;
+            width: 300px;
+            height: 150px;
+            border: 2px solid #333;
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+            padding: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="visible">
+        <h2>Visible</h2>
+        <p>La propiedad `overflow: visible` permite que el contenido desborde del elemento, es decir, el contenido se muestra aunque esté fuera del área del elemento.</p>
+    </div>
+
+    <div class="hidden">
+        <h2>Hidden</h2>
+        <p>La propiedad `overflow: hidden` oculta el contenido que desborda del elemento, es decir, el contenido que no cabe dentro del área del elemento no se mostrará.</p>
+    </div>
+
+    <div class="scroll">
+        <h2>Scroll</h2>
+        <p>La propiedad `overflow: scroll` muestra barras de desplazamiento tanto horizontal como verticalmente, permitiendo desplazar el contenido que no cabe dentro del área del elemento.</p>
+    </div>
+
+    <div class="auto">
+        <h2>Auto</h2>
+        <p>La propiedad `overflow: auto` muestra barras de desplazamiento solo cuando sea necesario, es decir, solo cuando el contenido desborda del área del elemento o cuando es el caso de que el texto es demasiado grande como para que solo se vea entonces ahi es donde aparece la barra para poder deslizar y ver el resto del contenido.</p>
+    </div>
+</body>
+</html>
